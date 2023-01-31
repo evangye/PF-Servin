@@ -1,0 +1,78 @@
+h1{
+    color: #26d3c3;
+    padding: 40px;
+    text-align: center;
+    margin: 80px 40px 80px 40px;
+    border: 50px solid #e990ae;
+    border-radius: 29%;
+}
+p{
+    font-style: italic;
+    color: black;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.violet{
+    background-color: #cbb1f9;
+}
+
+.pura_vida{
+    text-align: center;
+    font-style:italic;
+    color:#eb7aa1;
+    padding: 3%;
+    margin-top: 10px;
+}
+
+.significado{
+    flex-direction: row;
+    margin: 25%;
+    margin-bottom: 10px;
+    width: 40%;
+    border: black solid 5px;
+    border-radius: 10%;
+}
+
+ul {
+    li{
+        list-style-type: none;
+        display: inline-block;
+        padding: 10px;
+        margin: 5px;
+        border: #7703fc solid 3px;
+        border-radius: 29%;
+        background-color: #f7f71c;
+    }
+    li:hover{
+        background-color: #3bd8e4;
+        transition: all 0.5s;
+    }
+}
+
+// Mixin
+@mixin properties ($padding, $margin, $font-size){
+    padding: $padding;
+    margin: $margin;
+    font-size: $font-size;
+}
+
+@media screen and (min-width: 320px){
+    .inicio_secction{
+        @include properties (10px 10px, 10px 10px, 12px);
+        background-color: #ac95d5;
+    }
+}
+@media screen and (min-width: 768px){
+    .inicio_secction{
+        background-color: crimson;
+        @include properties (20px 20px, 20px 20px, 20px);
+    }
+}
+@media screen and (min-width: 1024px){
+    .inicio_secction{
+        @include properties (40px 40px, 40px 40px, 40px);
+        background-color: rgb(27, 95, 10);
+    }
+}
+

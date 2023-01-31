@@ -1,0 +1,53 @@
+$color: rojo;
+
+.productos__secction{
+    @if $color == rojo {
+        background-color:  rgb(253, 74, 74);
+    } @else if $color == amarillo {
+        background-color: hsl(59, 89%, 76%);
+    } @else {
+        background-color: #ac95d5;
+    }
+    
+    padding: 30px;
+    text-align: center;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    .lista_de_precios{
+        padding: 40px;
+        border: 5px solid salmon;
+        margin: 10px;
+    }
+    
+    .productos{
+        height: 300px;
+        border-radius: 15%;
+        border: 10px #e990ae solid;
+    }
+}
+
+@media screen and (min-width: 320px){
+    .productos__secction{
+        padding: 10px 10px;
+        margin: 10px 10px;
+        font-size: 12px;
+    }
+}
+@media screen and (min-width: 768px){
+    .productos__secction{
+        padding: 20px 20px;
+        margin: 20px 20px;
+        font-size: 20px;
+    }
+}
+@media screen and (min-width: 1024px){
+    .productos__secction{
+        padding: 40px 40px;
+        margin: 40px 40px;
+        font-size: 40px;
+    }
+}

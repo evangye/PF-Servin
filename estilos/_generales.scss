@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2? family= Kdam+Thmor+Pro & family= Poppins:ital,wght@0,200;1,100;1,400 & family= Roboto:ital,wght@ 0,100;1,400 & mostrar=cambiar');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: cornsilk;
+}
+
+.logo-inicio{
+    border-radius: 50%;
+    height: 0%;
+    width: 45%;   
+}
+
+.logo-inicio:hover {
+    animation: 1.5s infinite rodar;
+}
+
+@keyframes rodar{
+    100%{transform:rotate(360deg);} 
+}
+
+.violet{
+    background-color: #692dcf;
+}
+
+.iconos{
+    height: 30px;
+    list-style-type: none;
+    padding: 5px;
+    margin: 5px;
+    border: #ac95d5 solid 2px;
+    border-radius: 29%;
+}
+
+.flex_conteiner_footer{
+    height: 80px;
+    padding: 10px;
+    background-color:#d9b2b2;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: right;
+    align-items: flex-start;
+    align-content: space-around;
+}
+
+.footer{
+    margin: 500px 100px 500px 100px;
+    }
+
+footer{
+    grid-area: footer;
+}
